@@ -5,7 +5,7 @@ package com.example.grokking_algorithms.chapter_1;
  */
 public class BinarySearch {
 
-    public int search(int[] nums, int target) {
+    public static int search(int[] nums, int target) {
         // Начальный индекс
         int left = 0;
         // Конечный индекс
@@ -32,8 +32,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int search = new BinarySearch().search(new int[]{-1, 0, 3, 5, 9, 12}, 9);
-        System.out.println("search = " + search);
+        System.out.println("search = " + search(new int[]{-1, 0, 3, 5, 9, 12}, 9));
     }
 
 }
